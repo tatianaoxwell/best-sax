@@ -1,1 +1,18 @@
-<p>side-nav works!</p>
+<mat-sidenav-container class="app-sidenav-container">
+	<mat-sidenav #sidenav class="sidenav" [opened]="!isScreenSmall " [mode]="isScreenSmall ? 'over' : 'side' "
+				 [class.mat-elevation-z2]="!isActive" [class.mat-elevation-z8]="isActive">
+		<mat-toolbar color="primary">
+		</mat-toolbar>
+		<mat-nav-list>
+			<mat-list-item>
+			   <a matLine [routerLink]="['contact-us']">Contact Us</a>
+			   <a matLine [routerLink]="['about']">About BSS</a>
+			</mat-list-item>
+		  </mat-nav-list>
+	</mat-sidenav>
+	<div class="sidenav-content">
+		<div class="container">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+</mat-sidenav-container>
