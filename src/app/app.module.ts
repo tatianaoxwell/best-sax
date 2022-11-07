@@ -9,6 +9,8 @@ import { CartButtonComponent } from './header/cart-button/cart-button.component'
 import { HeaderComponent } from './header/header.component';
 import { SideNavComponent } from './header/side-nav/side-nav.component';
 import { PaymentSuccessComponent } from './pages/payment-success/payment-success.component';
+import { AboutBssDevComponent } from './pages/about-bss-dev/about-bss-dev.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { PaymentSuccessComponent } from './pages/payment-success/payment-success
     SideNavComponent,
     CartButtonComponent,
     PaymentSuccessComponent,
+    AboutBssDevComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,

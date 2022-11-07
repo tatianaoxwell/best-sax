@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { ProductsRoutingModule } from './products-routing.module';
 import { ProductCardComponent } from './product-card/product-card.component';
-import { ProductsComponent } from './products/products.component';
+import { ProductsRoutingModule } from './products-routing.module';
+import { ProductsComponent } from './products.component';
 
 
 @NgModule({

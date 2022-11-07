@@ -6,4 +6,6 @@ import { Injectable } from '@angular/core';
 export class WidthService {
 
   constructor() { }
+
+  /** breakpoint observer - app component subscribes to this on init */
 }
