@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CheckoutComponent } from './checkout/checkout.component';
+
+import { CheckoutRoutingModule } from './checkout-routing.module';
+import { CheckoutComponent } from './checkout.component';
 import { ShippingFormComponent } from './shipping-form/shipping-form.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
-
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { OrderSummaryComponent } from './order-summary/order-summary.component';
     OrderSummaryComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CheckoutRoutingModule
   ]
 })
 export class CheckoutModule { }

@@ -11,6 +11,7 @@ import { SideNavComponent } from './header/side-nav/side-nav.component';
 import { PaymentSuccessComponent } from './pages/payment-success/payment-success.component';
 import { AboutBssDevComponent } from './pages/about-bss-dev/about-bss-dev.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
     PaymentSuccessComponent,
     AboutBssDevComponent,
     ContactUsComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
