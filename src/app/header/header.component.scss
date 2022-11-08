@@ -1,19 +1,32 @@
+@use '../sass/abstracts/breakpoints' as *;
+
 .header {
-	background-color: #ffffff;
-	&__img {
-		vertical-align: middle;
-	}
+  background-color: #ffffff;
+  &__img {
+    vertical-align: middle;
+  }
+}
+
+.title {
+  display: inline;
+  vertical-align: middle;
 }
 
 .sidenav-toggle {
-	display: none;
+  @include md {
+    display: none;
+    padding: 0;
+    margin: 10px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-	padding: 0;
-	margin: 10px;
-
-	@media (max-width: 720px) {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+.menue {
+	display: flex;
+}
+.menue-items {
+	display: inline-block;
+	margin: auto;
 }

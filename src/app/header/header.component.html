@@ -3,6 +3,12 @@
 			(click)="toggleSidenav.emit()">
 		<mat-icon>menu</mat-icon>
 	</button>
-	<span class="img"><img class="logo" width="20%" src="../../assets/img/bssLogoPurple.jpg" alt="logo"></span>
-	<span class="example-spacer"></span>
+	<span class="img"><img class="logo" width="20%" src="../../assets/img/bssLogoPurple.jpg" alt="logo">
+		<h1 class="title">Best Sax Store</h1>
+	</span>
+	<mat-nav-list class="menue">
+		<mat-list-item *ngFor="let menueItem of menueItems" class="menue-items">
+			<a type="button" mat-button class="menue-link" [routerLink]="[menueItem.segment]">{{menueItem.content}}</a>
+		</mat-list-item>
+	</mat-nav-list>
 </mat-toolbar>
