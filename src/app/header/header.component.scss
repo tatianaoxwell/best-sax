@@ -1,0 +1,19 @@
+.header {
+	background-color: #ffffff;
+	&__img {
+		vertical-align: middle;
+	}
+}
+
+.sidenav-toggle {
+	display: none;
+
+	padding: 0;
+	margin: 10px;
+
+	@media (max-width: 720px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

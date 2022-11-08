@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-increment-button',
   templateUrl: './increment-button.component.html',
-  styleUrls: ['./increment-button.component.sass']
+  styleUrls: ['./increment-button.component.scss']
 })
 export class IncrementButtonComponent implements OnInit {
 
