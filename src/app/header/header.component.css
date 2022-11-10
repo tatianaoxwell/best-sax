@@ -1,0 +1,33 @@
+.header {
+  background-color: #ffffff;
+}
+.header__img {
+  vertical-align: middle;
+}
+
+.title {
+  display: inline;
+  vertical-align: middle;
+}
+
+.sidenav-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 720px) {
+  .sidenav-toggle {
+    display: none;
+    padding: 0;
+    margin: 10px;
+  }
+}
+
+.menue {
+  display: flex;
+}
+
+.menue-items {
+  display: inline-block;
+  margin: auto;
+}/*# sourceMappingURL=header.component.css.map */

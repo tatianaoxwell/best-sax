@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { IMenueItem } from './menu.model';
+import { IMenuItem } from './menu.model';
+import { SideNavService } from './side-nav/side-nav.service';
 
 @Component({
   selector: 'app-header',
@@ -7,15 +8,19 @@ import { IMenueItem } from './menu.model';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  menueItems: IMenueItem[] = [
-	{ segment: 'products', content: "The Best Sax’s" },
-	{ segment: 'cart', content: 'Cart' },
+  menuItems: IMenuItem[] = [
+    { segment: 'products', content: "The Best Sax’s" },
+    { segment: 'cart', content: 'Cart' },
     { segment: 'about', content: 'About BSS' },
     { segment: 'contact-us', content: 'Contact Us' },
   ];
 
   @Output() toggleSidenav: EventEmitter<void> = new EventEmitter<void>();
-  constructor() {}
+  constructor(private sideNavService: SideNavService) {}
 
   ngOnInit(): void {}
+
+  openSidenav(): void {
+    this.sideNavService.setIsSideNavOpen(true);
+  }
 }

@@ -1,14 +1,16 @@
 <mat-toolbar class="header" color="outline">
 	<button class="sidenav-toggle" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon"
-			(click)="toggleSidenav.emit()">
+			(click)="openSidenav()">
 		<mat-icon>menu</mat-icon>
 	</button>
 	<span class="img"><img class="logo" width="20%" src="../../assets/img/bssLogoPurple.jpg" alt="logo">
 		<h1 class="title">Best Sax Store</h1>
 	</span>
 	<mat-nav-list class="menue">
-		<mat-list-item *ngFor="let menueItem of menueItems" class="menue-items">
-			<a type="button" mat-button class="menue-link" [routerLink]="[menueItem.segment]">{{menueItem.content}}</a>
+		<mat-list-item *ngFor="let menuItem of menuItems" class="menue-items">
+			<a type="button" mat-button class="menue-link" [routerLink]="[menuItem.segment]">{{menuItem.content}}</a>
 		</mat-list-item>
 	</mat-nav-list>
+	<span class="example-spacer"></span>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">shopping_cart</mat-icon>
 </mat-toolbar>

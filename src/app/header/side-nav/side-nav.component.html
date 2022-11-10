@@ -1,11 +1,11 @@
-<mat-sidenav-container class="app-sidenav-container">
+<!-- <mat-sidenav-container class="app-sidenav-container">
 	<mat-sidenav #sidenav class="sidenav" [opened]="!isScreenSmall " [mode]="isScreenSmall ? 'over' : 'side' "
 				 [class.mat-elevation-z2]="!isActive" [class.mat-elevation-z8]="isActive">
 		<mat-toolbar color="primary">
 		</mat-toolbar>
 		<mat-nav-list class="menue">
-			<mat-list-item *ngFor="let menueItem of menueItems" class="menue-items">
-				<a type="button" mat-button class="menue-link" [routerLink]="[menueItem.segment]">{{menueItem.content}}</a>
+			<mat-list-item *ngFor="let menuItem of menuItems" class="menue-items">
+				<a type="button" mat-button class="menue-link" [routerLink]="[menuItem.segment]">{{menuItem.content}}</a>
 			</mat-list-item>
 		</mat-nav-list>
 	</mat-sidenav>
@@ -14,4 +14,15 @@
 			<router-outlet ></router-outlet>
 		</div>
 	</div>
-</mat-sidenav-container>
+</mat-sidenav-container> -->
+
+
+
+<div class="backdrop" [ngClass]="{'is-open' : isOpen}" (click)="closeSideNav()"></div>
+<div class="sideNav" [ngClass]="{'is-open' : isOpen}">
+	<span class="bosideNav__spacer"></span>
+    <mat-icon class="sideNav__icon" aria-hidden="false" aria-label="Example user verified icon">close</mat-icon>
+	<ul class="sideNav__links" *ngFor="let menuItem of menuItems" class="menue-items">
+		<li class="sideNav__linkItems"><a type="button" mat-button class="menue-link" [routerLink]="[menuItem.segment]">{{menuItem.content}}</a></li>
+	</ul>
+</div>

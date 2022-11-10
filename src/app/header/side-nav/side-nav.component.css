@@ -15,11 +15,12 @@
 .sidenav {
   width: 230px;
 }
+
 .container {
   margin: 40px;
 }
 
-.backdrop {
+.curtain {
   background-color: rgba(9, 10, 9, 0.4);
   position: absolute;
   z-index: 3;
@@ -27,26 +28,14 @@
   bottom: 0;
   left: 0;
   right: 0;
- display: none;
- &.is-open {
-	display: block;
- }
 }
- .sideNav {
-    background-color: #ffffff;
-    position: absolute;
-    width:0;
-    z-index: 5;
-    top: 0;
-    bottom: 0;
-		&.is-open {
-			width: 20rem;
-		}
+.curtain .box {
+  background-color: green;
+  width: 20rem;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+}
 
-		&.sideNav__links {
-		text-decoration: none;
-		display: flex;
-		height: 100%;
-		flex-direction: column;
-	}
-  }
+/* *# sourceMappingURL=side-nav.component.css.map */
