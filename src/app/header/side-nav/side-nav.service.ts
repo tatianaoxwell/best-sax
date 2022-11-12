@@ -18,7 +18,10 @@ export class SideNavService {
 
   setIsSideNavOpen(value: boolean): void {
     this.isSideNavOpen$.next(value);
+	console.log('setting', value);
+	
     // next() - to publish data to all the subscribing components.
-    // whenever we receive the value, we call next() on the BehSubject to let the listening component know that data is available.
+    // whenever we receive the value, we call next() on the BehSubject to let the listening
+	// component know that data is available.
   }
 }
