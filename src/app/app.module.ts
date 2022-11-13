@@ -14,6 +14,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { PaymentSuccessComponent } from './pages/payment-success/payment-success.component';
 
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -30,7 +31,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     PaymentSuccessComponent,
     AboutBssDevComponent,
     ContactUsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 	MatToolbarModule,
 	MatSidenavModule,
 	LayoutModule,
-	MatListModule
+	MatListModule,
+	MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

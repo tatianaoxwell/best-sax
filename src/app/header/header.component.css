@@ -23,11 +23,11 @@
   }
 }
 
-.menue {
+.menu {
   display: flex;
 }
 
-.menue-items {
+.menu-items {
   display: inline-block;
   margin: auto;
 }/*# sourceMappingURL=header.component.css.map */

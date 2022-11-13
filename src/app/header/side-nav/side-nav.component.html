@@ -16,13 +16,21 @@
 	</div>
 </mat-sidenav-container> -->
 
-
-
-<div class="backdrop" [ngClass]="{'is-open' : isOpen}" (click)="closeSideNav()"></div>
-<div class="sideNav" [ngClass]="{'is-open' : isOpen}">
-	<span class="bosideNav__spacer"></span>
-    <mat-icon class="sideNav__icon" aria-hidden="false" aria-label="Example user verified icon">close</mat-icon>
-	<ul class="sideNav__links" *ngFor="let menuItem of menuItems" class="menue-items">
-		<li class="sideNav__linkItems"><a type="button" mat-button class="menue-link" [routerLink]="[menuItem.segment]">{{menuItem.content}}</a></li>
+<div class="backdrop" [ngClass]="{'is-open' : isOpen}" (click)="closeSideNav()">
+</div>
+<div class="side-nav" [ngClass]="{'is-open' : isOpen}">
+	<div class="side-nav__icon">
+		<button mat-icon-button (click)="closeSideNav()">
+			<mat-icon aria-hidden="false" aria-label="Example user verified icon">close</mat-icon>
+		</button>
+	</div>
+	<ul class="side-nav__links">
+		<li class="side-nav__links-items">
+			<img class="side-nav__links-items-img" src="../../../assets/img/bssLogoPurplemini.jpg" alt="logo">
+		</li>
+		<li class="side-nav__links-items" *ngFor="let menuItem of menuItems">
+			<a class="side-nav__links-items-link" type="button" mat-button
+			   [routerLink]="[menuItem.segment]">{{menuItem.content}}</a>
+		</li>
 	</ul>
 </div>

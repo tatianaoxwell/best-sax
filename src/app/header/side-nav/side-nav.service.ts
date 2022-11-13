@@ -24,4 +24,4 @@ export class SideNavService {
     // whenever we receive the value, we call next() on the BehSubject to let the listening
 	// component know that data is available.
   }
-}
+}  

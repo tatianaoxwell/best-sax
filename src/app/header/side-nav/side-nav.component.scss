@@ -1,23 +1,23 @@
-.app-sidenav-container {
-  flex: 1;
-  width: 100%;
-  min-width: 100%;
-  height: 100%;
-  min-height: 100%;
-}
+// .app-sidenav-container {
+//   flex: 1;
+//   width: 100%;
+//   min-width: 100%;
+//   height: 100%;
+//   min-height: 100%;
+// }
 
-.sidenav-content {
-  display: flex;
-  height: 100%;
-  flex-diection: column;
-}
+// .sidenav-content {
+//   display: flex;
+//   height: 100%;
+//   flex-diection: column;
+// }
 
-.sidenav {
-  width: 230px;
-}
-.container {
-  margin: 40px;
-}
+// .sidenav {
+//   width: 230px;
+// }
+// .container {
+//   margin: 40px;
+// }
 
 .backdrop {
   background-color: rgba(9, 10, 9, 0.4);
@@ -27,26 +27,69 @@
   bottom: 0;
   left: 0;
   right: 0;
- display: none;
- &.is-open {
-	display: block;
- }
-}
- .sideNav {
-    background-color: #ffffff;
-    position: absolute;
-    width:0;
-    z-index: 5;
-    top: 0;
-    bottom: 0;
-		&.is-open {
-			width: 20rem;
-		}
-
-		&.sideNav__links {
-		text-decoration: none;
-		display: flex;
-		height: 100%;
-		flex-direction: column;
-	}
+  display: none;
+  &.is-open {
+    display: block;
   }
+}
+.side-nav {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 0;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  &.is-open {
+    width: 20rem;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: end;
+	margin: 0.5rem 0.5rem 0 0;
+  }
+  &__links {
+    list-style: none;
+	padding: 0;
+	text-align: center;
+	margin: 1rem 0;
+    &-items {
+		margin: 0.5rem 0;;
+      &-img {
+        width: 25%;
+		margin-bottom: 1rem;;
+      }
+      &-link {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//   .icon {
+//     align-items: flex-start;
+//     color: #ffffff;
+//     display: inline-block;
+//     font-size: 13px;
+//     line-height: 19.5px;
+//     padding: 1px 6px;
+//     text-align: center;
+//   }
+
+//   .linkItems {
+//     background-color: #ffffff;
+//     flex-basis: 100%;
+//     font-family: HelveticaNeue-Cond;
+//     font-size: 13px;
+//     letter-spacing: 2px;
+//     line-height: 19.5px;
+//     padding: 0px 20px 40px;
+//     text-align: left;
+//   }
+//   .linkItems-link {
+//     display: inline;
+// 	text-decoration: none;
+//   }

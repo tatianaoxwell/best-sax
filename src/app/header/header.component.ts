@@ -22,5 +22,7 @@ export class HeaderComponent implements OnInit {
 
   openSidenav(): void {
     this.sideNavService.setIsSideNavOpen(true);
+	console.log('openSideNav()');
+	
   }
 }
